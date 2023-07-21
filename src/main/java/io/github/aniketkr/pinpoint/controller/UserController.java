@@ -15,6 +15,6 @@ public class UserController {
     @GetMapping("/")
     public String viewUsersList(Model model) {
         model.addAttribute("listUsers", userService.getAllUsers());
-        return "partials/navbar";
+        return "feed";
     }
 }
